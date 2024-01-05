@@ -1,0 +1,10 @@
+# 统一不同IDE之间的配置的文件：http://editorconfig.org
+root = true # 表示是最顶层的配置文件，发现值为true时，才会停止查找.editorconfig文件
+[*]
+charset = utf-8 # 设置编码格式，值为latin1、utf-8、utf-8-bom、utf-16be和utf-16le
+indent_style = space # 设置使用那种缩进风格(tab是制表符，space是空格)
+indent_size = 2 # 定义用于每个缩进级别的空格数
+# tab_width = 2 # 用一个整数来设置tab缩进的列数
+end_of_line = lf # 设置换行符，值为lf、cr、crlf和auto
+trim_trailing_whitespace = true # 设置为true会删除每一行后行符之前的任何空格空白字符
+insert_final_newline = true # 设置为true以确保文件（包括最后一行）在保存时以换行符结尾，最后一行会强制换行到下一行
