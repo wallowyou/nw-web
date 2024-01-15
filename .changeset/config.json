@@ -3,9 +3,9 @@
   "changelog": "@changesets/cli/changelog",
   "commit": false,
   "fixed": [],
-  "linked": [["@nw-web/utils"]],
+  "linked": [],
   "access": "restricted",
-  "baseBranch": "main",
+  "baseBranch": "origin/master",
   "updateInternalDependencies": "patch",
   "ignore": []
 }
