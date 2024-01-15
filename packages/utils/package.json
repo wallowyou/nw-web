@@ -1,0 +1,32 @@
+{
+  "name": "@nw-web/utils",
+  "private": false,
+  "version": "1.0.0",
+  "main": "dist/pictode-utils.umd.js",
+  "module": "dist/pictode-utils.mjs",
+  "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/nw-utils.mjs",
+      "require": "./dist/nw-utils.umd.js",
+      "types": "./types/index.d.ts"
+    }
+  },
+  "files": [
+    "dist/**/*",
+    "types/**/*"
+  ],
+  "scripts": {
+    "build": "npm run build:type && vite build",
+    "build:type": "npm run clear:type && tsc --declaration --emitDeclarationOnly --project tsconfig.build.json",
+    "clear:type": "rimraf ./types"
+  },
+  "keywords": ["nw-web","utils"],
+  "author": "wallowyou",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11"
+  }
+}

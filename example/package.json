@@ -11,6 +11,7 @@
     "prettier": "prettier --write \"**/*.{vue,js,jsx,ts,tsx}\""
   },
   "dependencies": {
+    "@nw-web/utils": "workspace:^",
     "vue": "^3.3.11"
   },
   "devDependencies": {

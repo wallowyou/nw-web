@@ -7,28 +7,23 @@ module.exports = {
     node: true,
     es2021: true
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
-    // eslint-config-prettier 的缩写，覆盖冲突的eslint规则
-    // plugin:prettier/recommended内部extends配置了prettier规则，
-    // 测试过这里不配置prettier也行，需要注意的是prettier规则放最后
-    'prettier'
-  ],
+  globals: {
+    describe: true,
+    it: true,
+    expect: true,
+    beforeEach: true,
+    NodeJS: true
+  },
+  extends: ['plugin:vue/vue3-recommended', 'eslint:recommended', 'plugin:prettier/recommended'],
+  parser: 'vue-eslint-parser',
   parserOptions: {
     ecmaVersion: 12,
+    parser: '@typescript-eslint/parser',
+    extraFileExtensions: ['.vue'],
     sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true
-    }
+    project: ['./tsconfig.json']
   },
-  plugins: [
-    // eslint-plugin-prettier 缩写
-    // plugin:prettier/recommended内部plugins配置了prettier插件，
-    // 测试过这里不配置prettier也行
-    'prettier'
-  ],
-  rules: {},
-  globals: {}
+  plugins: ['vue', '@typescript-eslint', 'prettier'],
+  ignorePatterns: ['.eslintrc.js'],
+  rules: {}
 };

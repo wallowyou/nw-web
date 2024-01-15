@@ -5,8 +5,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "bootstrap": "pnpm i && pnpm build",
+    "changeset": "changeset",
+    "update:version": "changeset version",
+    "release": "changeset publish",
+    "test": "vitest",
+    "lint": "eslint . --ext .js,.vue,.ts,.tsx",
+    "lint:fix": "eslint . --fix --ext .js,.vue,.ts,.tsx",
+    "prepare": "husky install",
+    "commit": "git-cz"
   },
   "keywords": [],
   "author": "",
@@ -14,25 +21,48 @@
   "workspaces": [
     "packages/*"
   ],
+  "engines": {
+    "node": ">=16"
+  },
   "dependencies": {
     "vue": "^3.4.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@changesets/cli": "^2.27.1",
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
     "@rushstack/eslint-patch": "^1.6.1",
+    "@types/node": "^20.11.1",
     "@typescript-eslint/eslint-plugin": "^6.17.0",
     "@typescript-eslint/parser": "^6.17.0",
     "@vue/eslint-config-prettier": "^9.0.0",
     "@vue/eslint-config-typescript": "^12.0.0",
+    "autoprefixer": "^10.4.16",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.2",
     "eslint-plugin-vue": "^9.19.2",
     "husky": "^8.0.3",
+    "jsdom": "^23.2.0",
     "lint-staged": "^15.2.0",
+    "postcss": "^8.4.33",
     "prettier": "^3.1.1",
+    "rimraf": "^5.0.5",
     "sass": "^1.69.7",
     "typescript": "^5.3.3",
     "vite": "^5.0.11",
-    "vite-plugin-eslint": "^1.8.1"
+    "vite-plugin-eslint": "^1.8.1",
+    "vitest": "0.34.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": "eslint --fix"
   }
 }

@@ -1,4 +1,8 @@
 packages:
-  - 'packages/**'
-  - docs
-  - example
+  # all packages in direct subdirs of main/
+  - 'example'
+  # all packages in direct subdirs of packages/
+  - 'packages/*'
+  # exclude packages that are inside test directories
+  - 'docs'
+  - '!**/test/**'
