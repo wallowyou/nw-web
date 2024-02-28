@@ -19,7 +19,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "keywords": [],
-  "author": "",
+  "author": "wallowyou",
   "license": "ISC",
   "workspaces": [
     "packages/*"
@@ -28,6 +28,8 @@
     "node": ">=16"
   },
   "dependencies": {
+    "@nw-web/nw-antdv": "workspace:*",
+    "@nw-web/utils": "workspace:*",
     "vue": "^3.4.5"
   },
   "devDependencies": {

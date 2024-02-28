@@ -1,5 +1,32 @@
 # setup
 `pnpm install`
+# 安装
+
+`pnpm install -w`
+`-w` 表示安装到公共模块的 packages.json 中
+
+`pnpm install vue --save -r --filter @nw-web/ui`  把包安装到指定的项目下
+# 项目架构
+## 1. Monorepo
+整个工程的代码组织采用 Monorepo 的组织方式，使用工具 pnpm + workspace 来实现。所以全部项目都是放在一个仓库里的，包括文档、组件。
+工程具体分为以下几块，**以文档和组件库**为两大类进行分块：
+
+1. 文档工程（docs）
+
++ 安装指引
++ 组件使用文档（`utils`、`ant-design-vue`、`hooks`、`nw-ui`）
++ 组件开发文档
+2. 组件库（packages）
++ `ant-design-vue`
++ `hooks`
++ `nw-ui`
++ `utils`
+
+
+
+
+其中 `nw-ui`用来规划编写自定义组件的，`utils`用来写通用的工具函数，`hooks`用来写通用的hook函数，`ant-design-vue`用来二次封装ant-design-vue组件，后续如果需要二次封装其他组件库组件，也可以额外增加文件夹。文档采用vitepress搭建。
+
 # 自动化发布流和生成发布记录
 这里要借用到某个插件——  `changesets`。
 
