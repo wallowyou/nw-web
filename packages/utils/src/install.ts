@@ -16,3 +16,13 @@ export const withInstall = <T extends component>(comp: T): Plugin => {
   };
   return comp as SFCWithInstall<T>;
 };
+
+export const makeInstaller = (components: Plugin[] = []) => {
+  const install = (app: App) => {
+    console.log(components);
+    components.forEach((c) => app.use(c));
+  };
+  return {
+    install
+  };
+};

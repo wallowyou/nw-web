@@ -1,10 +1,9 @@
-import type { Plugin } from 'vue';
-/**
- * 组件外部使用use时执行install，然后将组件注册为全局
- */
-export type SFCWithInstall<T> = T & Plugin;
-/**
- * 定义一个withInstall方法处理以下组件类型问题
- * @param comp
- */
-export declare const withInstall: <T>(comp: T) => SFCWithInstall<T>;
+import type { App, Plugin } from 'vue';
+declare type component = {
+    name: string;
+};
+export declare const withInstall: <T extends component>(comp: T) => Plugin;
+export declare const makeInstaller: (components?: Plugin[]) => {
+    install: (app: App) => void;
+};
+export {};

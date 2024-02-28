@@ -7,6 +7,7 @@
 
 `pnpm install vue --save -r --filter @nw-web/ui`  把包安装到指定的项目下
 # 项目架构
+参考:https://www.cnblogs.com/wp-leonard/p/17894496.html
 ## 1. Monorepo
 整个工程的代码组织采用 Monorepo 的组织方式，使用工具 pnpm + workspace 来实现。所以全部项目都是放在一个仓库里的，包括文档、组件。
 工程具体分为以下几块，**以文档和组件库**为两大类进行分块：
@@ -28,6 +29,12 @@
 其中 `nw-ui`用来规划编写自定义组件的，`utils`用来写通用的工具函数，`hooks`用来写通用的hook函数，`ant-design-vue`用来二次封装ant-design-vue组件，后续如果需要二次封装其他组件库组件，也可以额外增加文件夹。文档采用vitepress搭建。
 
 # 自动化发布流和生成发布记录
+## version
+遵循 semver 语义化版本（验证小工具），格式一般为 `{major}.{minor}.{patch}`。
++ major：大功能/特性更新、对用户使用方式有影响；
++ minor：新功能、对用户使用方式无影响；
++ patch：bug 修复/不影响用户
+
 这里要借用到某个插件——  `changesets`。
 
 它是一款切合pnpm体系下的一款管理版本控制和变更日志的工具，专注于多包存储库。虽然pnpm下暂时没有像lerna完善的发布流程工具，但changesets也算的上是官方推荐的一款，将就用吧。

@@ -9,20 +9,23 @@ export default defineConfig({
     rollupOptions: {
       // 忽略打包vue文件
       external: ['vue', 'ant-design-vue'],
-      output: {
-        globals: {
-          vue: 'Vue',
-          'ant-design-vue': 'ant-design-vue'
+      output: [
+        {
+          format: 'es',
+          dir: 'dist/es',
+          entryFileNames: '[name].mjs'
         },
-        format: 'es',
-        exports: 'named'
-      }
+        {
+          format: 'cjs',
+          dir: 'dist/lib',
+          entryFileNames: '[name].js',
+          exports: 'named'
+        }
+      ]
     },
     lib: {
       entry: path.resolve(__dirname, './index.ts'),
-      name: 'nwAntdv',
-      fileName: 'nw-antdv',
-      formats: ['es', 'cjs', 'umd', 'iife']
+      name: 'nw-antdv'
     }
   },
   plugins: [vue()]

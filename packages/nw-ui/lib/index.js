@@ -1,0 +1,1 @@
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const e=require("./utils/dist/nw-utils.js"),t=require("./installs.js"),n=require("./input/index.js"),u=e.makeInstaller([...t.default]);exports.NwInput=n.NwInput;exports.default=u;

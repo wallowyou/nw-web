@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@nw-web/nw-antdv": "workspace:*",
+    "@nw-web/nw-ui": "workspace:*",
     "@nw-web/utils": "workspace:*",
     "vue": "^3.4.5"
   },
@@ -60,6 +61,7 @@
     "sass": "^1.69.7",
     "typescript": "^5.3.3",
     "vite": "^5.0.11",
+    "vite-plugin-dts": "^3.7.3",
     "vite-plugin-eslint": "^1.8.1",
     "vitepress": "1.0.0-rc.36",
     "vitest": "0.34.6"
