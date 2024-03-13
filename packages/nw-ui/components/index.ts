@@ -1,6 +1,6 @@
-import { makeInstaller } from '@nw-web/utils';
-import installs from './installs';
+import { makeInstaller } from '@nw-web/utils'
+import installs from './installs'
 
-export * from './components';
+export * from './components'
 
-export default makeInstaller([...installs]);
+export default makeInstaller([...installs])

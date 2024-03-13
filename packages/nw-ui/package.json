@@ -6,7 +6,12 @@
   "module": "es",
   "type": "module",
   "types": "types/index.d.ts",
-  "files": ["es", "lib", "types", "global.d.ts"],
+  "files": [
+    "es",
+    "lib",
+    "types",
+    "global.d.ts"
+  ],
   "scripts": {
     "build": "gulp -f build/gulpfile.js"
   },

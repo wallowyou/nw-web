@@ -1,3 +1,3 @@
-import NwInput from './input';
+import NwInput from './input'
 
-export default [NwInput];
+export default [NwInput]

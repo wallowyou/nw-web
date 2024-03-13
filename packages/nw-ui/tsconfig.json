@@ -1,8 +1,6 @@
 {
-  "extends": "../../tsconfig.json",
-  "include": ["components"],
+  "extends": "@nw-web/tsconfig/base.json",
   "compilerOptions": {
-      "moduleResolution": "node",
-      "baseUrl": "."
-  }
+    "baseUrl": ".",
+  },
 }

@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite';
-import type { UserConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
-import dts from 'vite-plugin-dts';
+import { defineConfig } from 'vite'
+import type { UserConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import dts from 'vite-plugin-dts'
 
 export default defineConfig(() => {
   return {
@@ -56,5 +56,5 @@ export default defineConfig(() => {
         rollupTypes: true
       })
     ]
-  } as UserConfig;
-});
+  } as UserConfig
+})

@@ -10,8 +10,7 @@
     "prettier.js",
     "stylelint.js"
   ],
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [],
   "dependencies": {
     "@commitlint/cli": "^17.8.1",

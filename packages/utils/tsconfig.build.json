@@ -1,5 +1,5 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "@nw-web/tsconfig/base.json",
   "compilerOptions": {
     "baseUrl": ".",
     "declaration": true,

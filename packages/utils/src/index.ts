@@ -1,2 +1,2 @@
-export * from './uid';
-export * from './install';
+export * from './uid'
+export * from './install'
