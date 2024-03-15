@@ -8,5 +8,5 @@
     "declarationMap": false,
     "paths": {}
   },
-  "include": ["src"]
+  "include": ["components"]
 }

@@ -30,3 +30,4 @@ yarn-error.log*
 !/pnpm-lock.yaml
 !/.gitignore
 # apps/admin/mock/
+cache

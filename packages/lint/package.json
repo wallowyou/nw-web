@@ -1,8 +1,8 @@
 {
   "name": "@nw-web/lint",
   "version": "0.0.1",
-  "private": true,
   "license": "MIT",
+  "private": false,
   "files": [
     "commitlint.js",
     "eslint.js",
@@ -38,5 +38,9 @@
   "devDependencies": {
     "typescript": "^5.3.3"
   },
-  "author": "wallowyou"
+  "author": "wallowyou",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }

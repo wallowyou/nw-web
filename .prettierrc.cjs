@@ -1,1 +1,1 @@
-module.exports = require('@nw-web/lint/prettier');
+module.exports = require('@nw-web/lint/prettier')

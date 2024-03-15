@@ -3,23 +3,23 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "nw-web packages"
+  text: "web"
+  tagline: 封装的一些前端库
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: lint
+      link: /lint
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: tsconfig
+      link: /tsconfig
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 组件
+    details: 封装一些通用的组件，基于组件库二次封装的组件
+  - title: 规范
+    details: 封装默认的eslint prettier stylelint配置
+  - title: 函数
+    details: 根据业务积累的通用的函数和hook
 ---
 

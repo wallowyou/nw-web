@@ -8,5 +8,9 @@
   "files": [
     "base.json",
     "server.json"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
