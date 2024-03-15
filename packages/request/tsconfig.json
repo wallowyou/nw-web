@@ -1,0 +1,11 @@
+{
+  "extends": "@nw-web/tsconfig/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": false,
+    "forceConsistentCasingInFileNames": true,
+    "declarationMap": false,
+    "paths": {}
+  },
+  "include": ["src"]
+}

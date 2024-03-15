@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite'
 export default defineConfig({
   build: {
     cssCodeSplit: false,
-    sourcemap: true,
+    sourcemap: false,
     minify: false,
     target: 'esnext',
     lib: {
@@ -12,4 +12,4 @@ export default defineConfig({
     },
     rollupOptions: {}
   }
-});
+})

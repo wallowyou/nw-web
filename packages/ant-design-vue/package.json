@@ -1,0 +1,34 @@
+{
+  "name": "@nw-web/nw-antdv",
+  "version": "1.0.0",
+  "description": "components with antd-design-vue@3.2.20",
+  "main": "dist/nw-antdv.umd.js",
+  "module": "dist/nw-antdv.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/nw-antdv.mjs",
+      "require": "./dist/nw-antdv.umd.js"
+    }
+  },
+  "files": [
+    "dist/**/*",
+    "types/**/*"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:type": "tsc --declaration --emitDeclarationOnly --project tsconfig.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "ant-design-vue": "3.2.20",
+    "vue": "^3.4.20"
+  },
+  "peerDependencies": {
+    "ant-design-vue": "3.2.20",
+    "vue": "^3.4.20"
+  }
+}

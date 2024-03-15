@@ -1,0 +1,29 @@
+{
+  "name": "@nw-web/nw-ui",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib",
+  "module": "es",
+  "type": "module",
+  "types": "types/index.d.ts",
+  "files": [
+    "es",
+    "lib",
+    "types",
+    "global.d.ts"
+  ],
+  "scripts": {
+    "build": "gulp -f build/gulpfile.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.69.7",
+    "shelljs": "^0.8.5"
+  }
+}

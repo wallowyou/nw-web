@@ -1,5 +1,5 @@
-import { expect, test } from 'vitest';
-import { guid } from '../src/uid';
+import { expect, test } from 'vitest'
+import { guid } from '../src/uid'
 test('guid', () => {
-  expect(guid().length).toBe(12);
-});
+  expect(guid().length).toBe(12)
+})

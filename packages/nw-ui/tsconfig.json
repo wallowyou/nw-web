@@ -1,0 +1,6 @@
+{
+  "extends": "@nw-web/tsconfig/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+  },
+}

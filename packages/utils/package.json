@@ -2,31 +2,40 @@
   "name": "@nw-web/utils",
   "private": false,
   "version": "1.0.0",
-  "main": "dist/pictode-utils.umd.js",
-  "module": "dist/pictode-utils.mjs",
+  "main": "dist/nw-utils.umd.js",
+  "module": "dist/nw-utils.mjs",
   "types": "types/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/nw-utils.mjs",
       "require": "./dist/nw-utils.umd.js",
-      "types": "./types/index.d.ts"
+      "types": "./dist/types/index.d.ts"
     }
   },
   "files": [
-    "dist/**/*",
-    "types/**/*"
+    "dist/**/*"
   ],
   "scripts": {
-    "build": "npm run build:type && vite build",
-    "build:type": "npm run clear:type && tsc --declaration --emitDeclarationOnly --project tsconfig.build.json",
-    "clear:type": "rimraf ./types"
+    "build": "vite build && npm run build:type",
+    "build:type": "tsc --declaration --emitDeclarationOnly --project tsconfig.build.json"
   },
-  "keywords": ["nw-web","utils"],
+  "keywords": [
+    "nw-web",
+    "utils"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "author": "wallowyou",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.11.1",
     "typescript": "^5.3.3",
-    "vite": "^5.0.11"
+    "vite": "^5.1.6",
+    "vue": "^3.4.20"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.20"
   }
 }

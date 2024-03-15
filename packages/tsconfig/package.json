@@ -1,0 +1,16 @@
+{
+  "name": "@nw-web/tsconfig",
+  "version": "0.0.1",
+  "description": "tsconfig for nw-web",
+  "keywords": [],
+  "author": "wallowyou",
+  "license": "MIT",
+  "files": [
+    "base.json",
+    "server.json"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

@@ -8,3 +8,8 @@ indent_size = 2 # 定义用于每个缩进级别的空格数
 end_of_line = lf # 设置换行符，值为lf、cr、crlf和auto
 trim_trailing_whitespace = true # 设置为true会删除每一行后行符之前的任何空格空白字符
 insert_final_newline = true # 设置为true以确保文件（包括最后一行）在保存时以换行符结尾，最后一行会强制换行到下一行
+[*.md]
+trim_trailing_whitespace = false
+
+[Makefile]
+indent_style = tab

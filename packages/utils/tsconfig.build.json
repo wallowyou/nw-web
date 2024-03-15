@@ -1,10 +1,11 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "@nw-web/tsconfig/base.json",
   "compilerOptions": {
     "baseUrl": ".",
     "declaration": true,
-    "declarationDir": "types",
+    "declarationDir": "dist/types",
     "forceConsistentCasingInFileNames": true,
+    "declarationMap": false,
     "paths": {}
   },
   "include": ["src"]
